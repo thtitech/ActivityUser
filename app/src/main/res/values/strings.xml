@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ActivityUser</string>
+
+    <string name="request_1_label">True</string>
+    <string name="request_2_label">False</string>
+    <string name="request_3_label">Unknown</string>
+    <string name="request_1_text">true</string>
+    <string name="request_2_text">false</string>
+    <string name="request_3_text">unknown</string>
+    <string name="start_button_label">Start</string>
 </resources>
