@@ -35,11 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 request = getString(R.string.request_3_text);
                 break;
         }
-        Intent intent = new Intent();
-        intent.setClassName("jp.ac.titech.itpro.sdl.activityprovider",
-                "jp.ac.titech.itpro.sdl.activityprovider.PublicActivity");
-        intent.putExtra("request", request);
-        startActivityForResult(intent, MYREQCODE);
+
+        Intent inten = new Intent(Intent.ACTION_VIEW);
+        inten.putExtra("request", request);
+        startActivityForResult(inten, MYREQCODE);
+        //Intent intent = new Intent();
+        //intent.setClassName("jp.ac.titech.itpro.sdl.activityprovider",
+        //        "jp.ac.titech.itpro.sdl.activityprovider.PublicActivity");
+        //intent.putExtra("request", request);
+        //startActivityForResult(intent, MYREQCODE);
     }
 
     @Override
